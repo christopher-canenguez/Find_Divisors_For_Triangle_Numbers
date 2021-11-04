@@ -137,7 +137,7 @@ public class Homework09 {
         System.out.println();
         
         System.out.println("Actual Result: " + a6 + "\n" + 
-                           "Expected Result: " + e6);
+                           "Expected Result: " + e6); 
         
         System.out.println();
         
