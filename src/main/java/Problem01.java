@@ -28,21 +28,27 @@ public class Problem01 {
     
     }
     
-    public static void func2(int n){
-        int k,j,i=n;
+    public static int func2(int n){
+        int k,j,i=n, counter = 0;
         while(i>1){
             j=1;
             while(j<n){
                 k=0;
                 while(k<n){
                     k=k+2;
-                   
+                   counter ++;
                 }
                 j=j*2;
             }
             i=i/2;
         }
+        return counter;
        
+    }
+    
+    public static void main (String[] args)
+    {
+        System.out.println(func2(1024));
     }
     
    // also discuss T(n) = 3 T(n/4) + n
